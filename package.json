@@ -1,5 +1,5 @@
 {
-	"author": "CTR",
+	"author": "Craft Vite Starter Kit",
 	"version": "0.0.1",
 	"dependencies": {
 		"petite-vue": "^0.4.1"
