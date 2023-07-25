@@ -1,0 +1,92 @@
+dateModified: 1689822500
+email:
+  fromEmail: aaron@aaronmclayton.com
+  fromName: 'Creation To Revelation'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    32c505a8-59cb-42a4-a742-7f161c61c1c3: Dummy # Dummy
+    236e28e3-e3b7-489f-a8b9-cd980d3356fe: 'Creation To Revelation' # Creation To Revelation
+    ba7bc760-4261-4241-b968-479a185e9e14: New # New
+    d681143a-cdea-4539-aa7b-ea1d1c0b2273: 'Creation To Revelation' # Creation To Revelation
+    ea7780d5-63a9-4a27-809a-d8548b709212: Common # Common
+plugins:
+  blitz:
+    edition: standard
+    enabled: true
+    licenseKey: 05X9XXL7JS7U01AH1CTU51VO
+    schemaVersion: 4.5.0
+  commerce:
+    edition: pro
+    enabled: true
+    licenseKey: 7SDX94J6T85LDC82W298UDOO
+    schemaVersion: 4.2.3
+  commerce-stripe:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: ''
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\nDisallow: /admin/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: ctr-sitemap
+      socialImage: null
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '1'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - '{title}'
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '1'
+            -
+              - template
+              - ' - {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Creation To Revelation'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
